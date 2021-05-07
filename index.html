@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body class="bg-gray-800">
+    <section>
+      <div class="container mx-auto pt-5 px-5">
+        <div class="flex flex-row justify-between items-center my-4">
+          <div>
+            <h1 class="uppercase text-yellow-300 text-xl">abhisek paul</h1>
+          </div>
+          <div
+            class="hidden lg:inline-flex space-x-10 items-center text-gray-100"
+          >
+            <p
+              class="text-base hover:text-yellow-400 transition duration-500 ease-in-out cursor-pointer"
+            >
+              Services
+            </p>
+            <p
+              class="text-base hover:text-yellow-400 transition duration-500 ease-in-out cursor-pointer"
+            >
+              Works
+            </p>
+            <p
+              class="text-base hover:text-yellow-400 transition duration-500 ease-in-out cursor-pointer"
+            >
+              Blogs
+            </p>
+          </div>
+          <div class="block lg:hidden">
+            <input
+              id="page-nav-toggle"
+              class="main-navigation-toggle"
+              type="checkbox"
+            />
+            <label for="page-nav-toggle">
+              <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+                <g class="icon-group">
+                  <g class="icon--menu">
+                    <path d="M 6 15 L 54 15" />
+                    <path d="M 6 30 L 54 30" />
+                  </g>
+                  <g class="icon--close">
+                    <path d="M 15 0 L 45 30" />
+                    <path d="M 15 30 L 45 0" />
+                  </g>
+                </g>
+              </svg>
+            </label>
+
+            <nav class="main-navigation">
+              <ul>
+                <li><a href="#0">Services</a></li>
+                <li><a href="#0">Works</a></li>
+                <li><a href="#0">Blogs</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="static banner bg-gray-800 py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h1
+                class="text-4xl md:text-4xl lg:text-7xl xl:text-8xl text-gray-50"
+              >
+                <span class="one">Hello,</span>
+              </h1>
+              <h1
+                class="text-4xl md:text-4xl lg:text-7xl xl:text-8xl text-gray-50 my-4"
+              >
+                <span class="one">Developers</span>
+              </h1>
+              <div class="w-14 h-1 bg-yellow-300 ml-1 mt-4"></div>
+              <div
+                class="inline-flex space-x-6 items-center mt-10 md:mt-20 ml-1"
+              >
+                <a href="/"
+                  ><i class="fab fa-twitter text-gray-100 text-xl"></i
+                ></a>
+                <a href="/"
+                  ><i class="fab fa-instagram text-gray-100 text-xl"></i
+                ></a>
+                <a href="/"
+                  ><i class="fab fa-github text-gray-100 text-xl"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="mx-0 md:mx-auto mt-10 w-full pr-0 md:pr-24 lg:pr-0 lg:w-96"
+            >
+              <div
+                class="text-base text-gray-50 inline-flex items-center space-x-4"
+              >
+                <div class="w-6 h-1 bg-gray-500"></div>
+                <div>Introduction</div>
+              </div>
+              <h1 class="pt-4 pb-8 text-gray-100 text-2xl">
+                User Interface Designer and Developer, based in India.
+              </h1>
+              <p
+                class="text-base text-gray-200 pb-8 font-light leading-relaxed"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                deserunt, ratione est natus quod laborum suscipit commodi saepe
+                tenetur. Fugit!
+              </p>
+              <button
+                class="text-yellow-300 focus:outline-none mt-4 inline-flex space-x-6 items-center"
+              >
+                <div>My Story</div>
+                <div>
+                  <img src="/assets/arrow.svg" alt="" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-900 py-10">
+        <div class="container mx-auto p-5">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10">
+            <div>
+              <div
+                class="text-base text-gray-50 inline-flex items-center space-x-4"
+              >
+                <div class="w-6 h-1 bg-gray-500"></div>
+                <div>Contact</div>
+              </div>
+              <h1 class="py-8 text-gray-100 text-2xl headline">
+                Any Type Of Query & Discussion
+              </h1>
+              <p
+                class="text-base text-gray-300 pb-8 font-light leading-relaxed"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                deserunt, ratione est natus quod laborum suscipit commodi saepe
+                tenetur. Fugit!
+              </p>
+              <button
+                class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center"
+              >
+                <div>me@techyblinder.com</div>
+                <div>
+                  <img src="/assets/arrow.svg" alt="" />
+                </div>
+              </button>
+            </div>
+            <div>
+              <h1 class="py-8 text-gray-100 text-2xl headline">
+                A boy with good taste in music. Love to build, learn, explore.
+                Developer by profession. Technical Evangelist at LG & Associates
+              </h1>
+              <p
+                class="text-base text-gray-300 pb-14 font-light leading-relaxed"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                exercitationem nesciunt tempore quam ratione atque qui
+                laboriosam, illum cupiditate corrupti debitis ducimus, impedit
+                voluptates totam iste autem iure dolorum eum.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div class="inline-flex space-x-4 items-end">
+                  <div class="text-6xl text-yellow-300">03</div>
+                  <div class="text-base text-gray-200">
+                    Years of <br />
+                    experience
+                  </div>
+                </div>
+                <div class="inline-flex space-x-4 items-end">
+                  <div class="text-6xl text-yellow-300">10</div>
+                  <div class="text-base text-gray-200">
+                    Satisfied <br />
+                    clients
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative top-36">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
+              <div
+                class="px-5 py-10 md:py-20 bg-gray-500 hover:bg-yellow-500 transition duration-500 ease-in-out cursor-pointer headline"
+              >
+                <div class="flex-row lg:flex justify-around items-start">
+                  <div class="mb-10 lg:mb-0 mr-6">
+                    <img src="/assets/product.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-light text-gray-50">
+                      UI Designer
+                    </h2>
+                    <p class="text-gray-100 pt-4 text-sm">124 Projects</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="px-5 py-10 md:py-20 bg-gray-500 hover:bg-yellow-500 transition duration-500 ease-in-out cursor-pointer headline"
+              >
+                <div class="flex-row lg:flex justify-around items-start">
+                  <div class="mb-10 lg:mb-0 mr-6">
+                    <img src="/assets/branding.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-light text-gray-50">
+                      Branding Designer
+                    </h2>
+                    <p class="text-gray-100 pt-4 text-sm">36 Projects</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="px-5 py-10 md:py-20 bg-gray-500 hover:bg-yellow-500 transition duration-500 ease-in-out cursor-pointer headline"
+              >
+                <div class="flex-row lg:flex justify-around items-start">
+                  <div class="mb-10 lg:mb-0 mr-6">
+                    <img src="/assets/developer.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-light text-gray-50">
+                      Full Stack Developer
+                    </h2>
+                    <p class="text-gray-100 pt-4 text-sm">62 Projects</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio -->
+      <div class="container mx-auto p-5 mt-40 portfolio">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="flex-col">
+            <div>
+              <div
+                class="text-base text-gray-50 inline-flex items-center space-x-4"
+              >
+                <div class="w-6 h-1 bg-gray-500"></div>
+                <div>Portfolio</div>
+              </div>
+              <h1 class="py-8 text-gray-100 text-2xl headline">
+                All Creative Works, Selected Projects
+              </h1>
+              <p
+                class="text-base text-gray-300 pb-8 font-light leading-relaxed"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                deserunt, ratione est natus quod laborum suscipit commodi saepe
+                tenetur. Fugit!
+              </p>
+              <button
+                class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center"
+              >
+                <div>Explore more</div>
+                <div>
+                  <img src="/assets/arrow.svg" alt="" />
+                </div>
+              </button>
+            </div>
+            <div class="headline">
+              <img
+                src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
+                alt=""
+                class="my-10"
+              />
+            </div>
+            <div class="headline">
+              <img
+                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
+                alt=""
+                class="my-0 md:my-10"
+              />
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="headline">
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                alt=""
+              />
+            </div>
+            <div class="headline">
+              <img
+                src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
+                alt=""
+                class="my-10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blog -->
+      <div class="bg-gray-900 py-10">
+        <div class="container mx-auto p-5">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10">
+            <div>
+              <div
+                class="text-base text-gray-50 inline-flex items-center space-x-4"
+              >
+                <div class="w-6 h-1 bg-gray-500"></div>
+                <div>Blog</div>
+              </div>
+              <h1 class="py-8 text-gray-100 text-2xl headline">
+                What's new ? <br />
+                My blog and news.
+              </h1>
+            </div>
+            <div>
+              <div
+                class="flex-row md:flex justify-between items-start pb-8 border-b-2 border-gray-500"
+              >
+                <p class="text-gray-400 text-sm">March 26</p>
+                <h2 class="text-base text-gray-100 w-auto md:w-96 my-6 md:my-0">
+                  Why Web Development is a Good Career in 2021
+                </h2>
+                <img src="/assets/arrow.svg" alt="" />
+              </div>
+              <div
+                class="flex-row md:flex justify-between items-start content-start py-8 border-b-2 border-gray-500"
+              >
+                <p class="text-gray-400 text-sm">April 02</p>
+                <h2 class="text-base text-gray-100 w-auto md:w-96 my-6 md:my-0">
+                  Best Resources to Learn Web Development
+                </h2>
+                <img src="/assets/arrow.svg" alt="" />
+              </div>
+              <div
+                class="flex-row md:flex justify-between items-start content-start py-8 border-b-2 border-gray-500"
+              >
+                <p class="text-gray-400 text-sm">May 04</p>
+                <h2 class="text-base text-gray-100 w-auto md:w-96 my-6 md:my-0">
+                  Resources Top 6 Productivity Tools for Developers
+                </h2>
+                <img src="/assets/arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Feedback -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10 mt-24 feedback"
+          >
+            <div class="mb-8 md:mb-0 headline">
+              <img
+                src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=702&q=80"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <p class="text-gray-400">
+                  <i class="fas fa-quote-left text-5xl text-gray-500"></i>
+                </p>
+                <h2 class="text-2xl text-gray-100 my-8">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda perspiciatis nisi, at maiores cum ex consequatur
+                  itaque quas aliquid dolorem?
+                </h2>
+                <h2 class="text-gray-100 pt-8 pb-4 text-xl">Jorad Warner</h2>
+                <p class="text-sm text-gray-400">Technical Evangelist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- project -->
+      <div class="container mx-auto p-5">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10 my-10 feedback"
+        >
+          <div class="mb-8 md:mb-0">
+            <h2 class="text-2xl text-gray-100 headline">
+              Got a project ? <br />Let's talk.
+            </h2>
+            <p class="py-10 text-gray-300 text-base font-light leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              est reprehenderit ea aliquid neque quis temporibus officiis
+              aspernatur et? Rem!
+            </p>
+            <button
+              class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center"
+            >
+              <div>me@techyblinder.com</div>
+              <div>
+                <img src="/assets/arrow.svg" alt="" />
+              </div>
+            </button>
+          </div>
+          <div>
+            <div>
+              <h2 class="text-gray-100 text-2xl headline">
+                Estimate your project ? <br />
+                Let me know here.
+              </h2>
+              <form action="#" class="my-10">
+                <div class="grid grid-cols-1 mb-8">
+                  <label for="username" class="text-gray-300 text-xl"
+                    >What's your name ?</label
+                  >
+                  <input
+                    type="text"
+                    class="py-4 bg-gray-800 border-b-2 border-gray-500 focus:outline-none text-gray-200"
+                  />
+                </div>
+                <div class="grid grid-cols-1 mb-4">
+                  <label for="email" class="text-gray-300 text-xl"
+                    >Your fancy email</label
+                  >
+                  <input
+                    type="email"
+                    class="py-4 bg-gray-800 border-b-2 border-gray-500 focus:outline-none text-gray-200"
+                  />
+                </div>
+                <div>
+                  <button
+                    class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center"
+                  >
+                    <div>Tell me about your project</div>
+                    <div>
+                      <img src="/assets/arrow.svg" alt="" />
+                    </div>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="container mx-auto my-20 p-5 text-center headline">
+        <h1 class="uppercase text-yellow-300 text-xl">abhisek paul</h1>
+        <p class="text-gray-400 text-base mt-4">
+          Thanks for scrolling. That's all folks
+        </p>
+        <div class="inline-flex space-x-6 items-center mt-10">
+          <a href="/"><i class="fab fa-twitter text-gray-100 text-xl"></i></a>
+          <a href="/"><i class="fab fa-instagram text-gray-100 text-xl"></i></a>
+          <a href="/"><i class="fab fa-github text-gray-100 text-xl"></i></a>
+        </div>
+      </div>
+    </section>
+    <script src="/js/main.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      ScrollReveal().reveal('.headline', { delay: 500 });
+    </script>
+  </body>
+</html>
