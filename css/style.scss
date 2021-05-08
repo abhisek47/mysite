@@ -4,17 +4,19 @@ section {
   font-family: 'Prompt', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
-  --color-primary: #002626;
+  --color-primary: #111827;
   --color-secondary: #f0f7ee;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   --space: 1rem;
-  --font-primary: 'Helvetica', sans-serif;
-  --font-heading: 'Merriweather', serif;
+  --font-primary: 'Prompt', sans-serif;
+  --font-heading: 'Prompt', serif;
   --font-size: 1.125rem;
   --line-height: 1.5;
 }
@@ -69,7 +71,7 @@ h1 {
 }
 
 .icon--menu {
-  stroke: var(--color-primary);
+  stroke: var(--color-secondary);
 }
 
 .icon--close {
@@ -88,6 +90,7 @@ h1 {
   transform: translateX(-100%);
   transition: transform var(--nav-duration);
   z-index: 1;
+  overflow: initial;
 
   &:after {
     content: '';
@@ -119,7 +122,7 @@ h1 {
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
+      display: none;
       height: var(--border-size);
       background-color: var(--color-secondary);
       transform-origin: 0 50%;
@@ -139,6 +142,11 @@ h1 {
     padding: var(--space) calc(var(--space) * 2)
       calc(var(--space) + var(--border-size) / 2);
     transform: translateY(100%);
+
+    &:hover {
+      text-decoration: none;
+      color: var(--color-secondary);
+    }
   }
 }
 
@@ -228,5 +236,53 @@ h1 {
   50%,
   100% {
     transform: translateY(0);
+  }
+}
+
+.banner {
+  z-index: 2;
+  background: url(/assets/profile2.png) no-repeat center bottom;
+}
+
+.feedback img {
+  width: 70%;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    background-blend-mode: soft-light;
+  }
+  .feedback img {
+    width: 100%;
+  }
+}
+
+h1 {
+  margin: 0;
+  overflow: hidden;
+  line-height: 1;
+}
+.one {
+  display: flex;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+.two {
+  display: block;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }

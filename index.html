@@ -42,19 +42,27 @@
             class="hidden lg:inline-flex space-x-10 items-center text-gray-100"
           >
             <p
-              class="text-base hover:text-yellow-400 transition duration-500 ease-in-out cursor-pointer"
+              class="text-base transition duration-500 ease-in-out cursor-pointer"
             >
-              Services
+              <a
+                href="#service"
+                class="hover:text-yellow-400 hover:no-underline"
+                >Services</a
+              >
             </p>
             <p
               class="text-base hover:text-yellow-400 transition duration-500 ease-in-out cursor-pointer"
             >
-              Works
+              <a href="#work" class="hover:text-yellow-400 hover:no-underline"
+                >Works</a
+              >
             </p>
             <p
               class="text-base hover:text-yellow-400 transition duration-500 ease-in-out cursor-pointer"
             >
-              Blogs
+              <a href="#blog" class="hover:text-yellow-400 hover:no-underline"
+                >Blog</a
+              >
             </p>
           </div>
           <div class="block lg:hidden">
@@ -80,15 +88,18 @@
 
             <nav class="main-navigation">
               <ul>
+                <li><a href="#0">Home</a></li>
                 <li><a href="#0">Services</a></li>
-                <li><a href="#0">Works</a></li>
-                <li><a href="#0">Blogs</a></li>
+                <li><a href="#0">Work</a></li>
+                <li><a href="#0">Blog</a></li>
               </ul>
             </nav>
           </div>
         </div>
-        <div class="static banner bg-gray-800 py-20">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="banner bg-gray-800 h-screen">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center h-screen"
+          >
             <div>
               <h1
                 class="text-4xl md:text-4xl lg:text-7xl xl:text-8xl text-gray-50"
@@ -98,7 +109,7 @@
               <h1
                 class="text-4xl md:text-4xl lg:text-7xl xl:text-8xl text-gray-50 my-2"
               >
-                <span class="one">Developers</span>
+                <span class="one">Everyone</span>
               </h1>
               <div class="w-14 h-1 bg-yellow-300 ml-1 mt-4"></div>
               <div
@@ -128,18 +139,20 @@
               <p
                 class="text-base text-gray-200 pb-8 font-light leading-relaxed subhead"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                deserunt, ratione est natus quod laborum suscipit commodi saepe
-                tenetur. Fugit!
+                I provide digital solution to grow your business globally. I'm
+                building websites for any kind of business whether it's a
+                startup or a small company.
               </p>
-              <button
-                class="text-yellow-300 focus:outline-none mt-4 inline-flex space-x-6 items-center"
-              >
-                <div class="subhead">My Story</div>
-                <div>
-                  <img src="/assets/arrow.svg" alt="" />
-                </div>
-              </button>
+              <a href="#story" class="hover:text-yellow-400 hover:no-underline">
+                <button
+                  class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center subhead"
+                >
+                  <div>My story</div>
+                  <div>
+                    <img src="/assets/arrow.svg" alt="" />
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -160,9 +173,8 @@
               <p
                 class="text-base text-gray-300 pb-8 font-light leading-relaxed subhead"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                deserunt, ratione est natus quod laborum suscipit commodi saepe
-                tenetur. Fugit!
+                Feel free to contact with me. I have so many awesome things to
+                share with you guys. So stay tuned for more updates.
               </p>
               <button
                 class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center subhead"
@@ -173,7 +185,7 @@
                 </div>
               </button>
             </div>
-            <div>
+            <div id="story">
               <h1 class="py-8 text-gray-100 text-2xl headline">
                 A boy with good taste in music. Love to build, learn, explore.
                 Developer by profession. Technical Evangelist at LG & Associates
@@ -181,10 +193,12 @@
               <p
                 class="text-base text-gray-300 pb-14 font-light leading-relaxed subhead"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                exercitationem nesciunt tempore quam ratione atque qui
-                laboriosam, illum cupiditate corrupti debitis ducimus, impedit
-                voluptates totam iste autem iure dolorum eum.
+                3 years ago I decided to start learning about website design and
+                development. Cause I was always fond of technology and how this
+                internet works. That time I had been thinking that who made
+                those applications, how’s this gonna work. From that day I
+                always have a dream that I also want to make some application.
+                That’s why I started my career as a Developer.
               </p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                 <div class="inline-flex space-x-4 items-end subhead">
@@ -204,7 +218,7 @@
               </div>
             </div>
           </div>
-          <div class="relative top-36">
+          <div class="relative top-36" id="service">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
               <div
                 class="px-5 py-10 md:py-20 bg-gray-500 hover:bg-yellow-500 transition duration-500 ease-in-out cursor-pointer subhead"
@@ -256,7 +270,10 @@
         </div>
       </div>
       <!-- Portfolio -->
-      <div class="container mx-auto mt-52 portfolio px-4 md:px-0">
+      <div
+        class="container mx-auto mt-52 portfolio px-4 md:px-0 mb-10"
+        id="work"
+      >
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div class="flex-col">
             <div>
@@ -272,9 +289,8 @@
               <p
                 class="text-base text-gray-300 pb-8 font-light leading-relaxed subhead"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                deserunt, ratione est natus quod laborum suscipit commodi saepe
-                tenetur. Fugit!
+                I build some cool application, products and services for my
+                protfolio project. Feel free to check it out.
               </p>
               <button
                 class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center subhead"
@@ -286,39 +302,24 @@
               </button>
             </div>
             <div class="subhead">
-              <img
-                src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
-                alt=""
-                class="my-10"
-              />
+              <img src="/assets/techmedia.png" alt="" class="my-10" />
             </div>
             <div class="subhead">
-              <img
-                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
-                alt=""
-                class="my-0 md:my-10"
-              />
+              <img src="/assets/uidesign.png" alt="" class="my-0 md:my-10" />
             </div>
           </div>
           <div class="flex-col">
             <div class="subhead">
-              <img
-                src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
-                alt=""
-              />
+              <img src="/assets/nike.png" alt="" />
             </div>
             <div class="subhead">
-              <img
-                src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
-                alt=""
-                class="my-10"
-              />
+              <img src="/assets/clientfiling.png" alt="" class="my-10" />
             </div>
           </div>
         </div>
       </div>
       <!-- Blog -->
-      <div class="bg-gray-900 py-20">
+      <div class="bg-gray-900 py-20" id="blog">
         <div class="container mx-auto px-4 md:px-0">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10">
             <div class="">
@@ -522,9 +523,11 @@
             <p
               class="py-10 text-gray-300 text-base font-light leading-relaxed subhead"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              est reprehenderit ea aliquid neque quis temporibus officiis
-              aspernatur et? Rem!
+              If you have any projects in your mind then don't waste your time,
+              join with me and let's discuss about it. Stay positive and safe in
+              this COVID pandemic. Don’t forget to use a mask. I have so many
+              awesome things to share with you guys. So stay tuned for more
+              updates.
             </p>
             <button
               class="text-yellow-300 focus:outline-none mt-10 inline-flex space-x-6 items-center subhead"
