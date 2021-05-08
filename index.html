@@ -7,6 +7,10 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
+    />
+    <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
@@ -22,10 +26,14 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
   </head>
   <body class="bg-gray-800">
     <section>
-      <div class="container mx-auto pt-5 px-5">
+      <div class="container mx-auto pt-2 px-4 md:px-0">
         <div class="flex flex-row justify-between items-center my-4">
           <div>
             <h1 class="uppercase text-yellow-300 text-xl">abhisek paul</h1>
@@ -79,7 +87,7 @@
             </nav>
           </div>
         </div>
-        <div class="static banner bg-gray-800 py-24">
+        <div class="static banner bg-gray-800 py-20">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div>
               <h1
@@ -107,9 +115,7 @@
                 ></a>
               </div>
             </div>
-            <div
-              class="mx-0 md:mx-auto mt-10 w-full pr-0 md:pr-24 lg:pr-0 lg:w-96"
-            >
+            <div class="md:mx-auto mt-10 w-full pr-0 lg:w-96">
               <div
                 class="text-base text-gray-50 inline-flex items-center space-x-4"
               >
@@ -139,7 +145,7 @@
         </div>
       </div>
       <div class="bg-gray-900 py-10">
-        <div class="container mx-auto p-5">
+        <div class="container mx-auto pt-10 px-4 md:px-0">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10">
             <div>
               <div
@@ -250,7 +256,7 @@
         </div>
       </div>
       <!-- Portfolio -->
-      <div class="container mx-auto p-5 mt-40 portfolio">
+      <div class="container mx-auto mt-52 portfolio px-4 md:px-0">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div class="flex-col">
             <div>
@@ -312,8 +318,8 @@
         </div>
       </div>
       <!-- Blog -->
-      <div class="bg-gray-900 py-10">
-        <div class="container mx-auto p-5">
+      <div class="bg-gray-900 py-20">
+        <div class="container mx-auto px-4 md:px-0">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10">
             <div>
               <div
@@ -332,60 +338,180 @@
                 class="flex-row md:flex justify-between items-start pb-8 border-b-2 border-gray-500"
               >
                 <p class="text-gray-400 text-sm">March 26</p>
-                <h2 class="text-base text-gray-100 w-auto md:w-96 my-6 md:my-0">
+                <h2 class="text-base text-gray-100 my-6 md:my-0 w-full md:w-96">
                   Why Web Development is a Good Career in 2021
                 </h2>
-                <img src="/assets/arrow.svg" alt="" />
+                <div class="hidden lg:block">
+                  <img src="/assets/arrow.svg" alt="" />
+                </div>
               </div>
               <div
                 class="flex-row md:flex justify-between items-start content-start py-8 border-b-2 border-gray-500"
               >
                 <p class="text-gray-400 text-sm">April 02</p>
-                <h2 class="text-base text-gray-100 w-auto md:w-96 my-6 md:my-0">
+                <h2 class="text-base text-gray-100 my-6 md:my-0 w-full md:w-96">
                   Best Resources to Learn Web Development
                 </h2>
-                <img src="/assets/arrow.svg" alt="" />
+                <div class="hidden lg:block">
+                  <img src="/assets/arrow.svg" alt="" />
+                </div>
               </div>
               <div
                 class="flex-row md:flex justify-between items-start content-start py-8 border-b-2 border-gray-500"
               >
                 <p class="text-gray-400 text-sm">May 04</p>
-                <h2 class="text-base text-gray-100 w-auto md:w-96 my-6 md:my-0">
+                <h2 class="text-base text-gray-100 my-6 md:my-0 w-full md:w-96">
                   Resources Top 6 Productivity Tools for Developers
                 </h2>
-                <img src="/assets/arrow.svg" alt="" />
+                <div class="hidden lg:block">
+                  <img src="/assets/arrow.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
           <!-- Feedback -->
           <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10 mt-24 feedback"
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center md:gap-10 mt-24 feedback"
           >
-            <div class="mb-8 md:mb-0 headline">
-              <img
-                src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=702&q=80"
-                alt=""
-              />
+            <div>
+              <div
+                id="client-testimonial-carousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active mb-8 md:mb-0">
+                    <div>
+                      <img
+                        src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="carousel-item mb-8 md:mb-0">
+                    <div>
+                      <img
+                        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="carousel-item mb-8 md:mb-0">
+                    <div>
+                      <img
+                        src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=784&q=80"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div>
-              <div>
-                <p class="text-gray-400">
-                  <i class="fas fa-quote-left text-5xl text-gray-500"></i>
-                </p>
-                <h2 class="text-2xl text-gray-100 my-8">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda perspiciatis nisi, at maiores cum ex consequatur
-                  itaque quas aliquid dolorem?
-                </h2>
-                <h2 class="text-gray-100 pt-8 pb-4 text-xl">Jorad Warner</h2>
-                <p class="text-sm text-gray-400">Technical Evangelist</p>
+              <div
+                id="client-testimonial-carousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div>
+                      <p class="text-gray-400">
+                        <i
+                          class="fas fa-quote-left text-2xl lg:text-5xl text-gray-500"
+                        ></i>
+                      </p>
+                      <h2
+                        class="text-base lg:text-2xl text-gray-100 my-4 lg:my-8 lg:my-6"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda perspiciatis nisi, at maiores cum ex
+                        consequatur itaque quas aliquid dolorem?
+                      </h2>
+                      <h2
+                        class="text-gray-100 pt-4 lg:pt-8 pb-2 text-lg lg:text-xl"
+                      >
+                        Jorad Warner
+                      </h2>
+                      <p class="text-sm text-gray-400">Technical Evangelist</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div>
+                      <p class="text-gray-400">
+                        <i
+                          class="fas fa-quote-left text-2xl lg:text-5xl text-gray-500"
+                        ></i>
+                      </p>
+                      <h2
+                        class="text-base lg:text-2xl text-gray-100 my-4 lg:my-6"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda perspiciatis nisi, at maiores cum ex
+                        consequatur itaque quas aliquid dolorem?
+                      </h2>
+                      <h2
+                        class="text-gray-100 pt-4 lg:pt-8 pb-2 text-lg lg:text-xl"
+                      >
+                        Jorad Warner
+                      </h2>
+                      <p class="text-sm text-gray-400">Technical Evangelist</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div>
+                      <p class="text-gray-400">
+                        <i
+                          class="fas fa-quote-left text-2xl lg:text-5xl text-gray-500"
+                        ></i>
+                      </p>
+                      <h2
+                        class="text-base lg:text-2xl text-gray-100 my-4 lg:my-6"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda perspiciatis nisi, at maiores cum ex
+                        consequatur itaque quas aliquid dolorem?
+                      </h2>
+                      <h2
+                        class="text-gray-100 pt-4 lg:pt-8 pb-2 text-lg lg:text-xl"
+                      >
+                        Jorad Warner
+                      </h2>
+                      <p class="text-sm text-gray-400">Technical Evangelist</p>
+                    </div>
+                  </div>
+                </div>
+                <ol
+                  class="carousel-indicators"
+                  style="
+                    display: flex;
+                    justify-content: flex-start;
+                    margin: 0;
+                    position: relative;
+                    top: 40px;
+                  "
+                >
+                  <li
+                    data-target="#client-testimonial-carousel"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#client-testimonial-carousel"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#client-testimonial-carousel"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- project -->
-      <div class="container mx-auto p-5">
+      <div class="container mx-auto pt-10 px-4 md:px-0">
         <div
           class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10 my-10 feedback"
         >
@@ -448,7 +574,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <div class="container mx-auto my-20 p-5 text-center headline">
+      <div class="container mx-auto my-20 text-center headline px-4 md:px-0">
         <h1 class="uppercase text-yellow-300 text-xl">abhisek paul</h1>
         <p class="text-gray-400 text-base mt-4">
           Thanks for scrolling. That's all folks
@@ -466,6 +592,9 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
     <script>
       ScrollReveal().reveal('.headline', { delay: 500 });
     </script>
